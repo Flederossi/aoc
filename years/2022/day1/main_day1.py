@@ -1,7 +1,7 @@
 __author__ = "Flederossi"
 
 def main():
-	pass
+	print("Day 1")
 
 if __name__ == "__main__":
 	main()
