@@ -1,9 +1,20 @@
-import sys
-
 __author__ = "Flederossi"
 
 def main(data):
-	pass
+	splitted = data.split("\n")
+
+	maximum = 0
+	count = 0
+
+	for element in splitted:
+		if element == "":
+			maximum = max([maximum, count])
+			count = 0
+		else:
+			count += int(element)
+	
+	print(maximum)
 
 if __name__ == "__main__":
-	main(sys.argv[1])
+	with open("input.txt", "r") as f:
+		main(f.read())
