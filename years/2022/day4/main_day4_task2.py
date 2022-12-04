@@ -1,6 +1,7 @@
 __author__ = "Flederossi"
 
 def main(data):
+<<<<<<< HEAD
 	splitted = [[[int(elve.split("-")[0]), int(elve.split("-")[1])] for elve in line.split(",")] for line in data.split("\n")]
 
 	res = 0
@@ -11,6 +12,9 @@ def main(data):
 				break
 
 	print(res)
+=======
+	pass
+>>>>>>> b09fde1e65c20beca6595d99970a3fef2fee505f
 
 if __name__ == "__main__":
 	with open("input.txt", "r") as f:
