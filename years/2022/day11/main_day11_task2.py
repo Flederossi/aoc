@@ -26,7 +26,7 @@ def main(data):
 			)
 		)
 		test = int(monkey[3].replace(" ", "").split("by")[1])
-		div *= (test * div) // math.gcd(div, test)
+		div *= test
 
 	for _ in range(10000):
 		for monkey in monkeys:
