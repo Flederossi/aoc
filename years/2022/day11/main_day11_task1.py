@@ -1,5 +1,3 @@
-import math
-
 __author__ = "Flederossi"
 
 class Monkey:
@@ -30,7 +28,7 @@ def main(data):
 			for item in monkey.items:
 				monkey.inspect += 1
 				new = eval(monkey.operation.replace("old", str(item)))
-				new = math.floor(new / 3)
+				new = new // 3
 				if new % monkey.test == 0:
 					monkeys[monkey.true].items.append(new)
 				else:

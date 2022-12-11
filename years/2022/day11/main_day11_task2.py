@@ -1,5 +1,3 @@
-import math
-
 __author__ = "Flederossi"
 
 class Monkey:
